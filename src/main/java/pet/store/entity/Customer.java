@@ -13,9 +13,15 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
-@Entity
-@Data
-public class Customer {
+//Add the @Entity (jakarta.persistence) and @Data (lombok) class-level annotations.
+
+	@Entity
+	@Data
+	public class Customer {
+		
+//Add the annotations @Id (jakarta.persistence) and @GeneratedValue (jakarta.persistence) to each ID field
+//Add the relationship variables into each class		
+//Add @EqualsAndHashCode.Exclude and @ToString.Exclude to all of the recursive relationship variables. This will prevent recursion from occurring when the .toString(), .equals(), or .hashCode() methods are called.		
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

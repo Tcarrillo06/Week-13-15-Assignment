@@ -11,7 +11,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
-////Add the @Entity (jakarta.persistence) and @Data (lombok) class-level annotations.
+//Add the @Entity (jakarta.persistence) and @Data (lombok) class-level annotations.
 
 	@Entity
 	@Data
