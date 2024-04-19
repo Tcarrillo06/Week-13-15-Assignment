@@ -25,8 +25,7 @@ import lombok.ToString;
 	
 //Add the annotations @Id (jakarta.persistence) and @GeneratedValue (jakarta.persistence) to each ID field
 //Add the relationship variables into each class		
-//Add @EqualsAndHashCode.Exclude and @ToString.Exclude to all of the recursive relationship variables. This will prevent recursion from occurring when the .toString(), .equals(), or .hashCode() methods are called.			
-	
+//Add @EqualsAndHashCode.Exclude and @ToString.Exclude to all of the recursive relationship variables. This will prevent recursion from occurring when the .toString(), .equals(), or .hashCode() methods are called
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long petStoreId;

@@ -9,7 +9,7 @@ import pet.store.entity.Customer;
 import pet.store.entity.Employee;
 import pet.store.entity.PetStore;
 
-//new class in this package
+//new class in this package and class
 //Add the @Data and @NoArgsConstructor as class-level annotations. 
 
 @Data
@@ -47,18 +47,15 @@ public class PetStoreData {
 
 	for(Customer customer : petStore.getCustomers()) {
 		customers.add(new PetStoreCustomer(customer));
-		
+	}	
 	for(Employee employee : petStore.getEmployees()) {
 		employees.add(new PetStoreEmployee(employee));
 		
 	}
-	}
-		
-		
-		
 		
 		
 		
 	}
 
+	
 }
